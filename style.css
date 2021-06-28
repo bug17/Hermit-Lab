@@ -1,0 +1,130 @@
+ /*add full-width input fields*/
+     
+ #outer-div{
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}
+h2{
+  font-weight: 50%;
+  text-align: center;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+}
+body{
+  height: 100%;
+  width: 50%;
+  margin-left: 23%;
+  background-image: url(./wp2823483.jpg);
+}
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid black;
+  border-style:inset;
+  box-sizing: border-box;
+  background: transparent;
+}
+/* set a style for all buttons*/
+
+button {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+}
+/*set styles for the cancel button*/
+
+.cancelbtn {
+  padding: 15px 20px;
+  background-color: grey;
+}
+.cancelbtn:hover{
+  background-color: lightskyblue;
+  color: black;
+}
+.signupbtn:hover{
+  background-color: lightgreen;
+  color: black;
+}
+::placeholder{
+  color: black;
+  font-weight: 500;
+  font-size: large;
+}
+/*float cancel and signup buttons and add an equal width*/
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+  font-weight: 300;
+}
+/*add padding to container elements*/
+
+.container {
+  padding: 16px;
+  /* text-align: center; */
+  
+}
+/*clear floats*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*styles for cancel button and signup button
+on extra small screens*/
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+      width: 100%;
+  }
+}
+
+label{
+   color: black;
+}
+/* html {
+height:100%;
+} */
+
+.bg {
+animation: slide 3s ease-in infinite alternate;
+background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+bottom:0;
+left:-50%;
+opacity:.5;
+position:fixed;
+right:-50%;
+top:0;
+z-index:-1;
+}
+
+.bg2 {
+animation-direction:alternate-reverse;
+animation-duration:4s;
+}
+
+.bg3 {
+animation-duration:5s;
+}
+
+@keyframes slide {
+0% {
+transform:translateX(-25%);
+}
+50%{
+transform: translate3d(10%);
+}
+100% {
+transform:translateX(25%);
+}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+   <div id="outer-div">
+    <h2>SIGN-UP FORM</h2>
+    <!--Step 1:Adding HTML-->
+    <form action="/action_page.php" style="border:5px solid black">
+        <div class="container">
+            <label><b>Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="Name" required>
+
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+ 
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"><span style="color: black; font-weight: 500;">Remember me for month</span>
+            <p style="color: black; font-weight:500;">By Signing Up You Agree to our <a href="#" style="color: white;">Terms & Privacy</a></p>
+ 
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+ 
+</body>
+ 
+</html>
